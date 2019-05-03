@@ -21,6 +21,10 @@
   ],
   "author": "Seiya Kobayashi",
   "license": "MIT",
+  "engines" : {
+    "node" : ">=10.15.3",
+    "npm":">= 3.10.9"
+  },
   "devDependencies": {
     "autoprefixer": "^7.2.6",
     "babel-cli": "^6.26.0",

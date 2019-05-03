@@ -11,6 +11,8 @@
         :width="svgWidth"
         :height="svgHeight"
         :id="svgId"
+        tag="span"
+        :classes="['fdfs', 'fsdfsd']"
         @ready="svgReady()"
         />
       <p class="button-label" :style="{'color': getLabelColor}"> {{ buttonLabel }} </p>

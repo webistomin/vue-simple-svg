@@ -4,9 +4,9 @@ const myClassName = 'simple-svg'
 
 let SimpleSVG = {
   render (createElement) {
-    return createElement('div', {
+    return createElement(this.tag, {
       'class': [
-        'simple-svg-wrapper'
+        Array.isArray(this.classes) ? this.classes.join(' ') : this.classes
       ]
     })
   },
@@ -19,7 +19,15 @@ let SimpleSVG = {
     height: String,
     id: {
       type: String,
-      defualt: ''
+      default: ''
+    },
+    tag: {
+      type: String,
+      default: 'div'
+    },
+    classes: {
+      type: [String, Array],
+      default: 'simple-svg-wrapper'
     }
   },
   data () {
